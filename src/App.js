@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  const [redBorder,setRedBorder] = useState(true);
+
+  const clickHandler = ()=>{
+    setRedBorder(pre=>!pre);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p className={`p1${redBorder?'':' blueBorder'}`}>I'm a paragraph.</p>
+      <button onClick={clickHandler}>Click me!</button>
     </div>
   );
-}
+};
 
 export default App;
