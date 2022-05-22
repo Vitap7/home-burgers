@@ -1,0 +1,113 @@
+.Checkout {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 32rem;
+  background-color: #dcdcdc;
+  z-index: 9999;
+}
+
+.Back {
+  color: #000;
+  font-size: 40rem;
+  padding-bottom: 12rem;
+  transition: 200ms;
+}
+
+.Content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 686rem;
+  min-height: 260rem;
+  border-radius: 40rem;
+}
+
+.Header {
+  padding: 28rem;
+  font-size: 30rem;
+  border-bottom: 2rem #f2f2f2 solid;
+}
+
+.Title {
+  font-weight: bold;
+}
+
+.List{
+  max-height: 1200rem;
+  overflow: auto;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20rem;
+  padding-right: 30rem;
+  font-weight: bold;
+  font-size: 30rem;
+  border-top: 2rem #f2f2f2 dashed;
+}
+
+footer::before,
+footer::after {
+  content: '';
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  top: -10rem;
+  right: -10rem;
+}
+
+footer::before{
+  top: -10rem;
+  left: -10rem;
+}
+
+.TotalPrice::before {
+  content: "合计￥";
+  font-size: 26rem;
+  font-weight: normal;
+}
+
+.BottomBar {
+  display: flex;
+  justify-content: space-between;
+  width: 700rem;
+  height: 80rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: fixed;
+  bottom: 20rem;
+  border-radius: 40rem;
+  background-color: #2e2b27;
+}
+
+.Price {
+  display: flex;
+  align-items: center;
+  margin-left: 56rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 36rem;
+}
+
+.Price::before {
+  content: "合计￥";
+  font-size: 32rem;
+}
+
+.BottomBar button {
+  border: none;
+  background-color: #fcbf49;
+  width: 160rem;
+  border-radius: 0 40rem 40rem 0;
+  font-size: 34rem;
+}

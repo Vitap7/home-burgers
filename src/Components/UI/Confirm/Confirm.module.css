@@ -1,0 +1,44 @@
+.Confirm{
+  z-index: 9999;
+}
+
+.Dialog{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin:auto;
+  background-color: #fff;
+  width: 500rem;
+  height: 280rem;
+  border-radius: 20rem;
+}
+
+.Desc{
+  font-size: 36rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.ButtonArea{
+  display: flex;
+  justify-content: space-around;
+}
+
+button{
+  width: 180rem;
+  border-radius: 28rem;
+  font-size: 36rem;
+  line-height: 50rem;
+  border: 2rem solid #c2c2c2;
+  background-color: #fff;
+}
+
+.Ok{
+  border: none;
+  background-color: #fcbf49;
+}

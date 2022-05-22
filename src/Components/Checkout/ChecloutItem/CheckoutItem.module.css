@@ -1,0 +1,45 @@
+.Box{
+  display: flex;
+  align-items: center;
+}
+
+.ImgBox {
+  width: 160rem;
+  margin-right: 20rem;
+}
+
+img {
+  width: 100%;
+}
+
+.DetailBox {
+  flex: auto;
+  display: flex;
+  flex-flow: column;
+  font-size: 30rem;
+}
+
+.Title{
+  font-weight: bold;
+  padding-bottom: 16rem;
+}
+
+.NumBox{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30rem;
+}
+
+.Amount{
+  width: 300rem;
+}
+
+.Price{
+  font-weight: bold;
+}
+
+.Price::before{
+  content: "￥";
+  font-size: 26rem;
+  font-weight: normal;
+}

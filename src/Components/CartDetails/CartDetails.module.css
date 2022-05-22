@@ -1,0 +1,35 @@
+.CartDetails {
+  display: flex;
+  flex-flow: column;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 750rem;
+  max-height: 1060rem;
+  padding-bottom: 100rem;
+  border-radius: 40rem 40rem 0 0;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  padding: 28rem;
+  font-size: 30rem;
+}
+
+.Title {
+  font-weight: bold;
+}
+
+.Clear,
+.Trash {
+  color: #a1a1a1;
+}
+
+.Clear {
+  margin-left: 10rem;
+}
+
+.CartList {
+  overflow: auto;
+}
